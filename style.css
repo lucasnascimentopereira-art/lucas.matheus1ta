@@ -1,1 +1,48 @@
+:root {
+  --verde: #009c3b; --amarelo: #ffdf00; --azul: #002776;
+  --card: #1a1a1a; --fundo: #0a0a0a;
+}
 
+body {
+  font-family: system-ui, sans-serif;
+  background-color: var(--fundo);
+  color: #f1f1f1;
+  margin: 0;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto; /* 'auto' centraliza */
+  padding: 0 1.5rem;
+}
+
+header {
+  background: linear-gradient(90deg, var(--verde), var(--azul));
+  padding: 2rem 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: var(--amarelo);
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+section {
+  background-color: var(--card);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  border-left: 4px solid var(--verde);
+}
+
+img {
+  max-width: 100%;
+  border-radius: 12px;
+  border: 3px solid var(--amarelo);
+  display: block;
+  margin: 1rem auto;
+}
